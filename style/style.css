@@ -1,0 +1,265 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+}
+
+/* strat login */
+.login {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login .left {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* An external space between the two pages */
+@media (max-width: 767px) {
+  .login .left {
+    margin-top: 20px;
+  }
+}
+
+.login .left h2 {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+}
+
+.login .left p {
+  padding: 10px 0;
+  color: #525252;
+  margin-bottom: 15px;
+}
+
+.login .left form .username i,
+.login .left .password i {
+  font-size: 22px;
+  margin-right: 6px;
+}
+
+.username,
+.login .left .password {
+  background: #f3f1ff;
+  padding: 10px;
+  border-radius: 10px;
+  color: rgba(28, 28, 28, 1);
+  margin-bottom: 15px;
+}
+
+.username input,
+.login .left .password input {
+  background: #f3f1ff;
+  border: none;
+  outline: none;
+  color: rgba(28, 28, 28, 1);
+  width: 280px;
+}
+
+.username input::placeholder,
+.password input::placeholder {
+  color: rgba(28, 28, 28, 1);
+}
+
+.login .left button {
+  width: fit-content;
+  padding: 18px 30px;
+  border: none;
+  outline: none;
+  margin: 20px 0 35px;
+  background: linear-gradient(to right, #9181f4, #5038ed);
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.login .left h4 {
+  position: relative;
+  margin: 10px 0 30px;
+  color: #525252;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.login .left h4::before {
+  content: "";
+  position: absolute;
+  left: 100%;
+  bottom: 10px;
+  width: 100%;
+  border: 1px solid #f0edff;
+}
+
+.login .left h4::after {
+  content: "";
+  position: absolute;
+  right: 100%;
+  bottom: 10px;
+  width: 100%;
+  border: 1px solid #f0edff;
+}
+
+/* the size on the small screen */
+@media (max-width: 767px) {
+
+  .login .left h4::before,
+  .login .left h4::after {
+    width: 50%;
+  }
+}
+
+.login .left h4 span {
+  color: black;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.login .left .google,
+.login .left .facebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #f0edff;
+  width: 330px;
+  padding: 12px 0;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.login .left .google img,
+.login .left .facebook img {
+  width: 30px;
+  height: 30px;
+  margin-right: 14px;
+}
+
+.login .left .google .text span,
+.login .left .facebook .text span {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.login .right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .login .right {
+    display: none;
+  }
+}
+
+.login .right .master {
+  width: 350px;
+  display: flex;
+  color: white;
+  background-color: #8474f3;
+  padding: 35px;
+  padding-bottom: 0;
+  border-radius: 27px;
+  border: 1px solid white;
+}
+
+.login .right::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../imgs/layout.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.login .right .master {
+  position: relative;
+  z-index: 1000;
+}
+
+.login .right .girl_img {
+  width: 280px;
+  margin-left: 55px;
+}
+
+.login .right .logo_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100px;
+  left: -25px;
+}
+
+/* Hide the logo on small screens (phone screens) */
+@media (max-width: 767px) {
+  .login .right .logo_img {
+    display: none;
+  }
+}
+
+.login .right p {
+  position: absolute;
+  font-size: 26px;
+  width: 168px;
+  line-height: 1.4;
+  font-weight: 600;
+  font-family: "Poppins";
+}
+
+/* end login */
